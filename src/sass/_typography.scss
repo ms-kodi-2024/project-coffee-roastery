@@ -1,0 +1,28 @@
+.splash {
+  color: $color-light;
+}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+}
+
+h1 {
+  color: $color-main;
+  font-variation-settings: $font-settings-black;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $color-light;
+  font-variation-settings: $font-settings-black;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+h3 {
+  color: $color-light;
+  font-variation-settings: $font-settings-bold;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
