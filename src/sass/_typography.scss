@@ -128,3 +128,20 @@ h2.product-title {
     }
   }
 }
+
+.contact {
+
+  label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-variation-settings: $font-settings-bold;
+    font-size: 1.5em;
+  }
+  
+  button[type="submit"] {
+    font-size: 1.5em;
+    font-variation-settings: $font-settings-bold;
+    text-transform: uppercase;
+		letter-spacing: 2px;
+  }
+}

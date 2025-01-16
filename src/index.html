@@ -43,7 +43,6 @@
 				</a>
 			</article>
 		</section>
-
 		<section id="pages">
 			<section id="home">
 				<h1 class="section-title products-title">Products</h1>
@@ -62,18 +61,39 @@
 					<p class="footer__description">&copy; 2021 <span>El Tigre</span> Inc.</p>
 				</footer>
 			</section>
-
 			<section id="products">
 				<h1 class="section-title products-title">Products</h1>
 				<section class="product-list container wrapper"></section>
+				<footer class="footer products-contact">
+					<p class="footer__description">&copy; 2021 <span>El Tigre</span> Inc.</p>
+				</footer>
 			</section>
-
-			<section id="contact">
-				<section class="contact__wrapper container">
+			<section id="contact" class="contact">
+				<section class="contact__wrapper">
+					<h1 class="section-title contact-title">Contact us</h1>
+					<form class="contact-form w-25 mx-auto">
+						<div class="form-group d-flex flex-column">
+							<label for="name" class="mb-3 mx-auto">Name</label>
+							<input type="text" id="name" required>
+						</div>
+						<div class="form-group d-flex flex-column">
+							<label for="title" class="my-3 mx-auto">Title</label>
+							<input type="text" id="title" required>	
+						</div>
+						<div class="form-group d-flex flex-column">
+							<label for="message" class="my-3 mx-auto">Message</label>
+							<textarea id="message" required></textarea>
+						</div>
+						<div class="form-group d-flex flex-column my-5">
+							<button type="submit" class="btn mx-auto">Submit</button>
+						</div>
+					</form>
 				</section>
+				<footer class="footer products-contact">
+					<p class="footer__description">&copy; 2021 <span>El Tigre</span> Inc.</p>
+				</footer>
 			</section>
 		</section>
-
 		<script id="template-list-product" type="text/x-handlebars-template">
 			{{#each products}}
 			<article class="product row {{direction}} mb-3 mb-md-5">
@@ -100,7 +120,6 @@
 			</article>
 			{{/each}}
 		</script>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 		<script src="js/script.js" type="module"></script>
 	</body>

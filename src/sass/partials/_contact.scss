@@ -1,0 +1,22 @@
+.contact {
+
+	input[type="text"] {
+		height: 50px;
+		border: 3px solid $color-dark;
+	}
+	
+	textarea {
+		resize: none;
+		height: 100px;
+		border: 3px solid $color-dark;
+	}
+
+	button[type="submit"] {
+		background-color: $color-main;
+		color: $color-light;
+		border: none;
+		padding: 15px 50px;
+		cursor: pointer;
+		margin-bottom: 70px;
+	}
+}
