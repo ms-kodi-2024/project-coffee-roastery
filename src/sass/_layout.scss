@@ -1,3 +1,18 @@
-section {
+section.splash {
+  width: 100vw;
   height: 100vh;
+}
+
+section.about-us {
+  width: 100vw;
+  min-height: 450px;
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 60%;
+}
+
+footer {
+  width: 100vw;
 }

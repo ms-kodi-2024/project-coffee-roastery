@@ -5,6 +5,10 @@
 a {
   text-decoration: none;
   color: $color-light;
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 h1 {
@@ -25,4 +29,102 @@ h3 {
   font-variation-settings: $font-settings-bold;
   text-transform: uppercase;
   letter-spacing: .3em;
+}
+
+h1.section-title {
+  text-align: center;
+  font-size: 50px;
+  font-variation-settings: $font-settings-bold;
+  letter-spacing: .3em;
+
+  &::after {
+    content: '';
+    display: block;
+    max-width: 500px;
+    height: 5px;
+    background-color: $color-main;
+    margin: 10px auto;
+  }
+}
+
+h1.products-title {
+  &::after {
+    margin-bottom: 50px;
+  }
+}
+
+h2.product-title {
+  color: $color-dark;
+  letter-spacing: 2px;
+  font-variation-settings: $font-settings-bold;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.product-description {
+  display: flex;
+  line-height: 1.5em;
+  font-size: 13px;
+  text-align: justify;
+  padding-right: 40px;
+  font-variation-settings: $font-settings-regular;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    background-color: $color-main;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
+
+.product-details {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-variation-settings: $font-settings-bold;
+  font-size: 17px;
+
+  span {
+    color: $color-main;
+  }
+}
+
+.about-us {
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  p {
+    color: $color-light;
+    font-variation-settings: $font-settings-semibold-italic;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1.section-title {
+    font-size: 30px;
+    
+    &::after {
+      width: 300px;
+    }
+  }
+
+  .about-us {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  h1.products-title {
+    &::after {
+      margin-bottom: 15px;
+    }
+  }
 }

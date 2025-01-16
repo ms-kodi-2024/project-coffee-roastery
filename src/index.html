@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="El Tigre - Venezuela coffee beans">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 					</nav>
 				</div>
 			</header>
-			<article class="intro">
+			<article class="intro wrapper">
 				<div class="intro__title-left">
 					<h1>Home of</h1>
 				</div>
@@ -37,10 +38,70 @@
 			</article>
 			<article class="discover d-flex flex-column align-items-center">
 				<h2>Discover</h2>
-				<a class="d-inline-flex align-items-center" href="#" aria-label="Discover">
+				<a id="discoverLink" class="d-inline-flex align-items-center" href="#pages" aria-label="Discover">
 					<i class="icon-arrow"></i>
 				</a>
 			</article>
 		</section>
+
+		<section id="pages">
+			<section id="home">
+				<h1 class="section-title products-title">Products</h1>
+				<section class="product-list container wrapper"></section>
+				<section class="about-us d-flex flex-column align-items-center">
+					<div class="about-us__wrapper wrapper">
+						<h1 class="about-us__title section-title">About us</h1>
+						<div class="about-us__description">
+							<p>Who are we? Just a bunch of friends with<br>a love for a good coffee and desire to create<br>something new, something original.</p>
+							<p>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</p>
+							<p class="description-right">Join us!</p>
+						</div>
+					</div>
+				</section>
+				<footer class="footer">
+					<p class="footer__description">&copy; 2021 <span>El Tigre</span> Inc.</p>
+				</footer>
+			</section>
+
+			<section id="products">
+				<h1 class="section-title products-title">Products</h1>
+				<section class="product-list container wrapper"></section>
+			</section>
+
+			<section id="contact">
+				<section class="contact__wrapper container">
+				</section>
+			</section>
+		</section>
+
+		<script id="template-list-product" type="text/x-handlebars-template">
+			{{#each products}}
+			<article class="product row {{direction}} mb-3 mb-md-5">
+				<div class="col-md-6 {{padding-description}}">
+					<h2 class="product-title">{{id}}. {{title}}</h2>
+					<div class="product-description-wrapper d-flex">
+						<p class="product-description d-flex">{{description}}</p>
+					</div>
+					<div class="product-details-wrapper d-flex">
+						<p class="product-details">
+							Roasting: <span>{{roasting}}</span><br>
+							Intensity: <span>{{intensity}}</span>
+						</p>
+						{{#if winner}}
+						<div class="winner-image w-50">
+							<img src="{{winnerImage}}" alt="Winner Image" class="img-fluid ms-5">
+						</div>
+						{{/if}}
+					</div>
+				</div>
+				<div class="col-md-6 pt-4 pt-md-0 {{padding-image}}">
+					{{{image}}}
+				</div>
+			</article>
+			{{/each}}
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+		<script src="js/script.js" type="module"></script>
 	</body>
 </html>

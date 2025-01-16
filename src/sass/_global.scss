@@ -4,4 +4,15 @@
 
 body {
   font-family: $font-source-sans-3;
+  overflow-x: hidden;
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
 }

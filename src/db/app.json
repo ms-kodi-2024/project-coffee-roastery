@@ -1,1 +1,42 @@
-{} 
+{
+  "products": [
+    {
+      "id": "01",
+      "title": "La Lagartija",
+      "description": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
+      "image": "<img src=\"images/coffee-1.png\" class=\"image-product img-fluid\" alt=\"coffee-1\">",
+      "roasting": "5/10",
+      "intensity": "6/10",
+      "padding-description": "pe-md-4",
+      "padding-image": "ps-md-4",
+      "winner": true,
+      "winnerImage": "images/winner.png"
+    },
+    {
+      "id": "02",
+      "title": "El Tigre",
+      "description": "Really dark coffe, only for the real gourmetes. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
+      "image": "<img src=\"images/coffee-2.png\" class=\"image-product img-fluid\" alt=\"coffee-2\">",
+      "roasting": "8/10",
+      "intensity": "9/10",
+      "direction": "flex-row-reverse",
+      "padding-description": "ps-md-4",
+      "padding-image": "pe-md-4",
+      "winner": false,
+      "winnerImage": "images/winner.png"
+    },
+    {
+      "id": "03",
+      "title": "La Cucaracha",
+      "description": "Sweet and intense a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days.",
+      "image": "<img src=\"images/coffee-3.png\" class=\"img-fluid\" alt=\"coffee-3\">",
+      "roasting": "3/10",
+      "intensity": "7/10",
+      "padding-description": "pe-md-4",
+      "padding-image": "ps-md-4",
+      "winner": false,
+      "winnerImage": "images/winner.png"
+    }
+  ],
+  "contacts": []
+}

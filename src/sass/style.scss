@@ -4,11 +4,11 @@
 // Bootstrap
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-@import "bootstrap/utilities";
 @import "bootstrap/mixins";
-@import "bootstrap/images";
+@import "bootstrap/utilities";
 @import "bootstrap/containers";
 @import "bootstrap/grid";
+@import "bootstrap/images";
 @import "bootstrap/utilities/api";
 
 // variables
@@ -22,3 +22,6 @@
 
 // components
 @import "partials/splash";
+@import "partials/products";
+@import "partials/about-us";
+@import "partials/footer";

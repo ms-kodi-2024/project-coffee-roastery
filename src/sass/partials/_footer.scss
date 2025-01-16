@@ -1,0 +1,12 @@
+.footer {
+  margin: auto;
+
+  &__description {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+}
