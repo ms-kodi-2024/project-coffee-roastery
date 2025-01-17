@@ -94,6 +94,7 @@
 				</footer>
 			</section>
 		</section>
+
 		<script id="template-list-product" type="text/x-handlebars-template">
 			{{#each products}}
 			<article class="product row {{direction}} mb-3 mb-md-5">
@@ -109,7 +110,7 @@
 						</p>
 						{{#if winner}}
 						<div class="winner-image w-50">
-							<img src="{{winnerImage}}" alt="Winner Image" class="img-fluid ms-5">
+							<img src="{{winnerImage}}" alt="Winner image" class="img-fluid ms-5">
 						</div>
 						{{/if}}
 					</div>
@@ -120,6 +121,7 @@
 			</article>
 			{{/each}}
 		</script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 		<script src="js/script.js" type="module"></script>
 	</body>
